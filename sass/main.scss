@@ -38,11 +38,12 @@ body {
 		border-radius: 8px;
 	}
 
-    &:hover {
-        .burger-btn__bars::after, .burger-btn__bars::before {
-            width: 100%;
-        }
-    }
+	&:hover {
+		.burger-btn__bars::after,
+		.burger-btn__bars::before {
+			width: 100%;
+		}
+	}
 
 	&__box {
 		position: relative;
@@ -56,26 +57,26 @@ body {
 		@include burgerBtn;
 	}
 
-    &__bars {
-        width: 100%;
+	&__bars {
+		width: 100%;
 
-        &::after{
-            top:13px;
-            width: 60%;
-        }
+		&::after {
+			top: 13px;
+			width: 60%;
+		}
 
-        &::before{
-            top:27px;
-            width: 60%;
-            transition-delay: .1s;
-        }
-    }
+		&::before {
+			top: 27px;
+			width: 60%;
+			transition-delay: 0.1s;
+		}
+	}
 }
 
 // HEADER
 
 .header {
-	position:relative;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -83,8 +84,8 @@ body {
 	padding: 2em;
 	height: 75vh;
 	text-align: center;
-	color:$pure-white;
-	@include heroImages ('../img/palm-3172367_640.jpg');
+	color: $pure-white;
+	@include heroImages('../img/palm-3172367_640.jpg');
 	background-attachment: scroll;
 
 	&__heading {
@@ -95,28 +96,60 @@ body {
 
 	&__text {
 		font-size: 1.4rem;
-
 	}
 
 	&__btn {
 		background: $pure-white;
 		margin-top: 2em;
 		padding: 0.8em 1.6em;
-		border:none;
-		font-size:1.4rem;
+		border: none;
+		font-size: 1.4rem;
 		border-radius: 8px;
-		color:$dark;
+		color: $dark;
 		text-decoration: none;
 		text-transform: uppercase;
 		cursor: pointer;
 
 		&::before {
 			background-color: $light-white;
-			
 		}
 	}
-
 }
 
+// MEDIA
 
+@media (min-width: 768px) {
+	.white-block {
+		width: 45%;
+		height: 50px;
+	}
 
+	.header {
+		&__heading {
+			font-size: 6.6rem;
+		}
+
+		&__text {
+			font-size: 2.2rem;
+		}
+
+		&__btn {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.burger-btn {
+		top: 50px;
+		right: 50px;
+	}
+
+	.header {
+		background-image: $blue-gradient, url('../img/mathematics-1509559_1920.jpg');
+
+		&__heading{
+			font-size: 10rem;
+		}
+	}
+}

@@ -95,7 +95,8 @@ body {
   border-radius: 8px;
 }
 
-.burger-btn:hover .burger-btn__bars::after, .burger-btn:hover .burger-btn__bars::before {
+.burger-btn:hover .burger-btn__bars::after,
+.burger-btn:hover .burger-btn__bars::before {
   width: 100%;
 }
 
@@ -127,8 +128,8 @@ body {
 .burger-btn__bars::before {
   top: 27px;
   width: 60%;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .header {
@@ -150,7 +151,7 @@ body {
   height: 75vh;
   text-align: center;
   color: #fff;
-  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/palm-3172367_640.jpg");
+  background-image: linear-gradient(45deg, rgba(27, 28, 30, 0.75), rgba(74, 72, 80, 0.75)), url("../img/palm-3172367_640.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -182,5 +183,34 @@ body {
 
 .header__btn::before {
   background-color: #eee;
+}
+
+@media (min-width: 768px) {
+  .white-block {
+    width: 45%;
+    height: 50px;
+  }
+  .header__heading {
+    font-size: 6.6rem;
+  }
+  .header__text {
+    font-size: 2.2rem;
+  }
+  .header__btn {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .burger-btn {
+    top: 50px;
+    right: 50px;
+  }
+  .header {
+    background-image: linear-gradient(45deg, rgba(27, 28, 30, 0.75), rgba(74, 72, 80, 0.75)), url("../img/mathematics-1509559_1920.jpg");
+  }
+  .header__heading {
+    font-size: 10rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
