@@ -20,11 +20,7 @@ body {
 	font-size: 1.6rem;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-	background-color: $dark;
-}
+
 
 // NAV
 
@@ -135,6 +131,13 @@ body {
 
 .nav-items-animation {
 	animation: navItemsAnimation 1s both;
+}
+
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
 }
 
 // HEADER
@@ -275,11 +278,14 @@ body {
 				position: absolute;
 				bottom: 30px;
 				right: 30px;
-				font-size: 1.8rem;
+				font-size: 2rem;
+				
 			}
 
-			i {
+			p {
 				margin-right: 0.3em;
+				font-family: 'Dancing Script', cursive;
+			
 			}
 		}
 
@@ -307,11 +313,12 @@ body {
 
 			&-list {
 				margin: 0 auto;
-				width: 70%;
+				margin-top: 2em;
+				width: 80%;
 				list-style: none;
 
 				&-item {
-					padding: 1em;
+					padding: 0.8em;
 					font-size: 1.4rem;
 					border-bottom: 1px solid $light-white;
 

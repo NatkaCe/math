@@ -110,12 +110,6 @@ body {
   font-size: 1.6rem;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-  background-color: #2e2e2e;
-}
-
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -253,6 +247,12 @@ body {
 .nav-items-animation {
   -webkit-animation: navItemsAnimation 1s both;
           animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
 }
 
 .header {
@@ -408,11 +408,12 @@ body {
   position: absolute;
   bottom: 30px;
   right: 30px;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
-.islands__card-img i {
+.islands__card-img p {
   margin-right: 0.3em;
+  font-family: 'Dancing Script', cursive;
 }
 
 .islands__card-info {
@@ -454,12 +455,13 @@ body {
 
 .islands__card-info-list {
   margin: 0 auto;
-  width: 70%;
+  margin-top: 2em;
+  width: 80%;
   list-style: none;
 }
 
 .islands__card-info-list-item {
-  padding: 1em;
+  padding: 0.8em;
   font-size: 1.4rem;
   border-bottom: 1px solid #eee;
 }
