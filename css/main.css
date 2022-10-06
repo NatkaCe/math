@@ -721,12 +721,6 @@ body {
   text-align: center;
 }
 
-@media (min-width: 375px) {
-  .offers li {
-    font: size 1.2rem;
-  }
-}
-
 @media (min-width: 576px) {
   .dreams__box {
     -webkit-box-orient: horizontal;
