@@ -258,15 +258,15 @@ body {
 			transition: transform 1s, opacity 1s;
 
 			&--first {
-				background-image: $light-blue-gradient, url(/img/abacus-1866497_640.jpg);
+				background-image: $light-blue-gradient, url('/img/abacus-1866497_640.jpg');
 			}
 
 			&--second {
-				background-image: $blue-gradient, url(/img/mathematics-878124_1920.jpg);
+				background-image: $blue-gradient, url('/img/mathematics-878124_1920.jpg');
 			}
 
 			&--third {
-				background-image: $purple-gradient, url(/img/mathematics-327488_1920.jpg);
+				background-image: $purple-gradient, url('/img/mathematics-327488_1920.jpg');
 			}
 
 			&-title {
@@ -401,16 +401,37 @@ body {
 	
 		}
 
-		li {
-			font-family:Arial, Helvetica, sans-serif;
-			list-style: none;
-			padding:0.1em;
-
+		&-achievements{
+			position:relative;
+			display:flex;
+			flex-wrap:wrap;
+			padding: 10px;
+		
 			i{
-				color:$main-color; 
+			padding: 10px;
+			font-size: 48px;
+			color: white;
+			text-shadow: 0 0 5px $main-color;
+			}
+
+			.achievements-list {
+				padding: 20px 0;
+			}
+	
+			.achievement-number {
+				position:relative;
+				font-size: 22px;
+			}
+			.achievement-text {
+				font-size: 13px;
+				text-transform: uppercase;
+
 			}
 		}
+
 	}
+
+	
 }
 
 // REVIEWS
