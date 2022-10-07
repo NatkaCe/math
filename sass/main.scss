@@ -258,15 +258,15 @@ body {
 			transition: transform 1s, opacity 1s;
 
 			&--first {
-				background-image: $light-blue-gradient, url('/img/abacus-1866497_640.JPG');
+				background-image: $light-blue-gradient, url(/img/abacus-1866497_640.jpg);
 			}
 
 			&--second {
-				background-image: $blue-gradient, url('/img/mathematics-878124_1920.JPG');
+				background-image: $blue-gradient, url(/img/mathematics-878124_1920.JPG);
 			}
 
 			&--third {
-				background-image: $purple-gradient, url('/img/mathematics-327488_1920.JPG');
+				background-image: $purple-gradient, url(/img/mathematics-327488_1920.JPG);
 			}
 
 			&-title {
