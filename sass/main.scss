@@ -373,7 +373,7 @@ body {
 		}
 
 		&-info {
-			padding: 2em 5em;
+			padding: 2em 2em;
 			background-color: $pure-white;
 			z-index: 10;
 		}
@@ -381,6 +381,7 @@ body {
 		&-heading {
 			font-weight: 200;
 			font-size: 2.4rem;
+			margin-bottom: 1em;
 	
 		}
 
@@ -391,15 +392,6 @@ body {
 		
 		}
 
-		&-cost {
-			margin-top: 0.5em;
-			width: 50%;
-			color: $pure-white;
-			background-color: $main-color;
-			border: none;
-			border-radius: 8px;
-	
-		}
 
 		&-achievements{
 			position:relative;
@@ -423,7 +415,7 @@ body {
 				font-size: 22px;
 			}
 			.achievement-text {
-				font-size: 13px;
+				font-size: 1.5rem;
 				text-transform: uppercase;
 
 			}

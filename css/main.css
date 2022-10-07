@@ -523,7 +523,7 @@ body {
 }
 
 .offers__option-info {
-  padding: 2em 5em;
+  padding: 2em 2em;
   background-color: #fff;
   z-index: 10;
 }
@@ -531,21 +531,13 @@ body {
 .offers__option-heading {
   font-weight: 200;
   font-size: 2.4rem;
+  margin-bottom: 1em;
 }
 
 .offers__option-text {
   margin-bottom: 0.5em;
   font-size: 1.3rem;
   color: #2e2e2e;
-}
-
-.offers__option-cost {
-  margin-top: 0.5em;
-  width: 50%;
-  color: #fff;
-  background-color: #1755e7;
-  border: none;
-  border-radius: 8px;
 }
 
 .offers__option-achievements {
@@ -575,7 +567,7 @@ body {
 }
 
 .offers__option-achievements .achievement-text {
-  font-size: 13px;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
