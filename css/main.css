@@ -61,7 +61,7 @@
 
 .section-heading {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -528,47 +528,51 @@ body {
   z-index: 10;
 }
 
-.offers__option-heading {
-  font-weight: 200;
-  font-size: 2.4rem;
-  margin-bottom: 1em;
-}
-
 .offers__option-text {
+  padding: 2em;
   margin-bottom: 0.5em;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #2e2e2e;
 }
 
-.offers__option-achievements {
-  position: relative;
+.offers-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.offers__option-achievements i {
-  padding: 10px;
-  font-size: 48px;
-  color: white;
-  text-shadow: 0 0 5px #1755e7;
+.offers-cards .offers-card {
+  width: 20%;
+  height: 100%;
+  margin: 0.5em;
+  padding: 2.5em 1em;
+  text-align: center;
+  border: 3px solid #1755e7;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.offers__option-achievements .achievements-list {
-  padding: 20px 0;
+.offers-cards .offers-card p {
+  font-size: 1.3rem;
+  padding: 1em 0;
 }
 
-.offers__option-achievements .achievement-number {
-  position: relative;
-  font-size: 22px;
-}
-
-.offers__option-achievements .achievement-text {
-  font-size: 1.5rem;
-  text-transform: uppercase;
+.offers-cards .offers-card i {
+  color: #1755e7;
+  font-size: 3.5rem;
 }
 
 @media (max-width: 767px) {
@@ -683,6 +687,20 @@ body {
 
 .contact__form-btn::before {
   background-color: #164dcc;
+}
+
+.contact-text {
+  padding-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .footer {

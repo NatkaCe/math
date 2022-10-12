@@ -20,8 +20,6 @@ body {
 	font-size: 1.6rem;
 }
 
-
-
 // NAV
 
 .burger-btn {
@@ -132,7 +130,6 @@ body {
 .nav-items-animation {
 	animation: navItemsAnimation 1s both;
 }
-
 
 .black-bars-color,
 .black-bars-color::after,
@@ -258,15 +255,18 @@ body {
 			transition: transform 1s, opacity 1s;
 
 			&--first {
-				background-image: $light-blue-gradient, url('../img/abacus-1866497_640.jpg');
+				background-image: $light-blue-gradient,
+					url('../img/abacus-1866497_640.jpg');
 			}
 
 			&--second {
-				background-image: $blue-gradient, url('../img/mathematics-878124_1920.jpg');
+				background-image: $blue-gradient,
+					url('../img/mathematics-878124_1920.jpg');
 			}
 
 			&--third {
-				background-image: $purple-gradient, url('../img/mathematics-327488_1920.jpg');
+				background-image: $purple-gradient,
+					url('../img/mathematics-327488_1920.jpg');
 			}
 
 			&-title {
@@ -279,13 +279,11 @@ body {
 				bottom: 30px;
 				right: 30px;
 				font-size: 2rem;
-				
 			}
 
 			p {
 				margin-right: 0.3em;
 				font-family: 'Dancing Script', cursive;
-			
 			}
 		}
 
@@ -378,56 +376,46 @@ body {
 			z-index: 10;
 		}
 
-		&-heading {
-			font-weight: 200;
-			font-size: 2.4rem;
-			margin-bottom: 1em;
-	
-		}
-
 		&-text {
+			padding: 2em;
 			margin-bottom: 0.5em;
-			font-size: 1.3rem;
+			font-size: 1.4rem;
 			color: $dark;
-		
 		}
-
-
-		&-achievements{
-			position:relative;
-			display:flex;
-			flex-wrap:wrap;
-			padding: 10px;
-		
-			i{
-			padding: 10px;
-			font-size: 48px;
-			color: white;
-			text-shadow: 0 0 5px $main-color;
-			}
-
-			.achievements-list {
-				padding: 20px 0;
-			}
-	
-			.achievement-number {
-				position:relative;
-				font-size: 22px;
-			}
-			.achievement-text {
-				font-size: 1.5rem;
-				text-transform: uppercase;
-
-			}
-		}
-
 	}
-
-	
 }
 
-// REVIEWS
+.offers-cards {
+	display: flex;
+	flex-direction: row;
+	height: 250px;
+	justify-content: space-between;
 
+	.offers-card {
+		width: 20%;
+		height: 100%;
+		margin: 0.5em;
+		padding: 2.5em 1em;
+		text-align: center;
+		border: 3px solid $main-color;
+		border-radius: 8px;
+		background-color: $pure-white;
+		overflow: hidden;
+		transition: transform 0.3s;
+
+		p {
+			font-size: 1.3rem;
+			padding: 1em 0;
+		}
+
+		i {
+			color: $main-color;
+			font-size: 3.5rem;
+		}
+	}
+}
+
+// REVIEWS\
 @media (max-width: 767px) {
 	.reviews.section-padding {
 		padding: 6em 0;
@@ -526,6 +514,14 @@ body {
 	}
 }
 
+.contact-text {
+	padding-bottom: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
 // FOOTER
 
 .footer {
@@ -622,7 +618,6 @@ body {
 			&-img {
 				width: 50%;
 				height: auto;
-
 			}
 
 			&-info {
@@ -635,7 +630,6 @@ body {
 				margin-bottom: 0.5em;
 				font-size: 3.6rem;
 			}
-
 
 			&-cost {
 				padding: 1em;
