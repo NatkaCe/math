@@ -87,7 +87,13 @@
     font-size: 4.8rem;
   }
   .section-padding {
-    padding: 10em 2em;
+    padding: 10em 2em 10em 2em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .offers {
+    padding: 10em 2em 20em 2em;
   }
 }
 
@@ -502,7 +508,7 @@ body {
 }
 
 .offers__option {
-  margin: 1em 0;
+  margin: 0em 0;
   -webkit-box-shadow: 5px 5px 10px #2e2e2e;
           box-shadow: 5px 5px 10px #2e2e2e;
   background-color: #fff;
@@ -523,14 +529,14 @@ body {
 }
 
 .offers__option-info {
-  padding: 2em 2em;
+  padding: 1em 1em;
   background-color: #fff;
   z-index: 10;
 }
 
 .offers__option-text {
-  padding: 2em;
-  margin-bottom: 0.5em;
+  width: 80%;
+  padding: 1em;
   font-size: 1.4rem;
   color: #2e2e2e;
 }
@@ -573,6 +579,11 @@ body {
 .offers-cards .offers-card i {
   color: #1755e7;
   font-size: 3.5rem;
+}
+
+.offers-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 767px) {
@@ -787,7 +798,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 2em 0;
     width: 100%;
   }
   .offers__option-img {
@@ -809,9 +819,6 @@ body {
   .offers__option-heading {
     margin-bottom: 0.5em;
     font-size: 3.6rem;
-  }
-  .offers__option-cost {
-    padding: 1em;
   }
 }
 
@@ -855,6 +862,9 @@ body {
   .islands__card {
     margin: 1em;
     width: 45%;
+  }
+  .offers {
+    padding: 10em 2em em 2em;
   }
   .footer__boxes {
     display: -webkit-box;
@@ -943,6 +953,7 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     height: 300px;
+    width: 500px;
   }
   .offers__option-text {
     font-size: 1.5rem;
@@ -952,6 +963,57 @@ body {
 @media (min-width: 1100px) {
   .islands__card {
     width: 30%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1100px) {
+  .offers-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .offers-cards .offers-card {
+    margin: 1em;
+    width: 30%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .offers {
+    padding: 10em 2em 30em 2em;
+  }
+}
+
+@media (max-width: 576px) {
+  .offers__option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .offers__option-img {
+    width: 100%;
+    height: auto;
+  }
+  .offers__option-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .offers__option-heading {
+    margin-bottom: 0.5em;
+    font-size: 3.6rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
