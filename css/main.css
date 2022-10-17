@@ -360,7 +360,7 @@ body {
   padding: 1em 0;
 }
 
-.islands__card {
+.offers__card {
   position: relative;
   margin: 1em 0;
   height: 450px;
@@ -370,19 +370,19 @@ body {
           perspective: 1000px;
 }
 
-.islands__card:hover .islands__card-img {
+.offers__card:hover .offers__card-img {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   opacity: 0;
 }
 
-.islands__card:hover .islands__card-info {
+.offers__card:hover .offers__card-info {
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
   opacity: 1;
 }
 
-.islands__card-img {
+.offers__card-img {
   padding: 2em;
   height: 100%;
   border-radius: 8px;
@@ -393,36 +393,36 @@ body {
   transition: transform 1s, opacity 1s, -webkit-transform 1s;
 }
 
-.islands__card-img--first {
+.offers__card-img--first {
   background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("../img/abacus-1866497_640.jpg");
 }
 
-.islands__card-img--second {
+.offers__card-img--second {
   background-image: linear-gradient(45deg, rgba(45, 79, 192, 0.76), rgba(52, 52, 129, 0.75)), url("../img/mathematics-878124_1920.jpg");
 }
 
-.islands__card-img--third {
+.offers__card-img--third {
   background-image: linear-gradient(45deg, rgba(190, 10, 214, 0.75), rgba(68, 0, 255, 0.75)), url("../img/mathematics-327488_1920.jpg");
 }
 
-.islands__card-img-title {
+.offers__card-img-title {
   font-family: 'Dancing Script', cursive;
   font-size: 2.8rem;
 }
 
-.islands__card-img-info {
+.offers__card-img-info {
   position: absolute;
   bottom: 30px;
   right: 30px;
   font-size: 2rem;
 }
 
-.islands__card-img p {
+.offers__card-img p {
   margin-right: 0.3em;
   font-family: 'Dancing Script', cursive;
 }
 
-.islands__card-info {
+.offers__card-info {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -449,7 +449,7 @@ body {
   transition: transform 1s, opacity 1s, -webkit-transform 1s;
 }
 
-.islands__card-info-title {
+.offers__card-info-title {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -459,24 +459,24 @@ body {
   font-size: 2.8rem;
 }
 
-.islands__card-info-list {
+.offers__card-info-list {
   margin: 0 auto;
   margin-top: 2em;
   width: 80%;
   list-style: none;
 }
 
-.islands__card-info-list-item {
+.offers__card-info-list-item {
   padding: 0.8em;
   font-size: 1.4rem;
   border-bottom: 1px solid #eee;
 }
 
-.islands__card-info-list-item:last-child {
+.offers__card-info-list-item:last-child {
   border-bottom: none;
 }
 
-.islands__card-info-btn {
+.offers__card-info-btn {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -490,11 +490,11 @@ body {
   cursor: pointer;
 }
 
-.islands__card-info-btn:before {
+.offers__card-info-btn:before {
   background-color: #0fe29c;
 }
 
-.offers {
+.aboutMe {
   position: relative;
   background-image: linear-gradient(45deg, rgba(45, 79, 192, 0.76), rgba(52, 52, 129, 0.75)), url("../img/math-5247958_1920.jpg");
   background-size: cover;
@@ -503,11 +503,11 @@ body {
   overflow: hidden;
 }
 
-.offers .section-heading {
+.aboutMe .section-heading {
   color: #fff;
 }
 
-.offers__option {
+.aboutMe__option {
   margin: 0em 0;
   -webkit-box-shadow: 5px 5px 10px #2e2e2e;
           box-shadow: 5px 5px 10px #2e2e2e;
@@ -515,7 +515,7 @@ body {
   overflow: hidden;
 }
 
-.offers__option-img {
+.aboutMe__option-img {
   width: 100%;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
@@ -523,25 +523,25 @@ body {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.offers__option-img:hover {
+.aboutMe__option-img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.offers__option-info {
+.aboutMe__option-info {
   padding: 1em 1em;
   background-color: #fff;
   z-index: 10;
 }
 
-.offers__option-text {
+.aboutMe__option-text {
   width: 80%;
   padding: 1em;
   font-size: 1.4rem;
   color: #2e2e2e;
 }
 
-.offers-cards {
+.aboutMe-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,10 +555,10 @@ body {
           justify-content: space-between;
 }
 
-.offers-cards .offers-card {
+.aboutMe-cards .aboutMe-card {
   width: 20%;
   height: 100%;
-  margin: 0.5em;
+  margin: 1em;
   padding: 2.5em 1em;
   text-align: center;
   border: 3px solid #1755e7;
@@ -571,17 +571,17 @@ body {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.offers-cards .offers-card p {
+.aboutMe-cards .aboutMe-card p {
   font-size: 1.3rem;
   padding: 1em 0;
 }
 
-.offers-cards .offers-card i {
+.aboutMe-cards .aboutMe-card i {
   color: #1755e7;
   font-size: 3.5rem;
 }
 
-.offers-card:hover {
+.aboutMe-card:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -794,31 +794,21 @@ body {
   .dreams__text {
     font-size: 1.8rem;
   }
-  .offers__option {
+  .aboutMe__option {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
   }
-  .offers__option-img {
+  .aboutMe__option-img {
     width: 50%;
-    height: auto;
   }
-  .offers__option-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .offers__option-heading {
-    margin-bottom: 0.5em;
-    font-size: 3.6rem;
+  .aboutMe__option-text {
+    width: 100%;
   }
 }
 
@@ -849,7 +839,7 @@ body {
   .hero-img__text {
     font-size: 2.2rem;
   }
-  .islands__cards {
+  .offers__cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -859,12 +849,9 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .islands__card {
+  .offers__card {
     margin: 1em;
     width: 45%;
-  }
-  .offers {
-    padding: 10em 2em em 2em;
   }
   .footer__boxes {
     display: -webkit-box;
@@ -946,22 +933,22 @@ body {
     width: 60%;
     max-width: 900px;
   }
-  .offers {
+  .aboutMe {
     background-image: linear-gradient(45deg, rgba(45, 79, 192, 0.76), rgba(52, 52, 129, 0.75)), url("../img/math-5247958_1920.jpg");
   }
-  .offers__option-img {
+  .aboutMe__option-img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 300px;
     width: 500px;
   }
-  .offers__option-text {
+  .aboutMe__option-text {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1100px) {
-  .islands__card {
+  .offers__card {
     width: 30%;
   }
 }
@@ -984,22 +971,15 @@ body {
         flex-wrap: wrap;
   }
   .offers {
-    padding: 10em 2em 30em 2em;
+    padding: 10em 2em 10em 2em;
   }
 }
 
 @media (max-width: 576px) {
-  .offers__option {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .aboutMe__option-text {
     width: 100%;
   }
-  .offers__option-img {
-    width: 100%;
-    height: auto;
-  }
-  .offers__option-info {
+  .aboutMe-cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1007,13 +987,17 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .offers__option-heading {
-    margin-bottom: 0.5em;
-    font-size: 3.6rem;
+  .aboutMe-cards .aboutMe-card {
+    width: 80%;
+    height: 80%;
+    padding: 4em;
+  }
+  .aboutMe {
+    padding: 10em 2em 40em 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
