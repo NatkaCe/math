@@ -704,6 +704,10 @@ body {
   text-align: center;
 }
 
+span {
+  font-weight: bold;
+}
+
 .footer {
   color: #fff;
   background-color: #2e2e2e;
